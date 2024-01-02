@@ -146,6 +146,7 @@ spotify
 kdenlive
  #onlyoffice-bin
  krita
+ rnix-lsp
 neofetch
   gnome.gnome-software
 gnome.gnome-system-monitor
@@ -298,6 +299,8 @@ home-manager.users.simon = { pkgs, ... }: {
 nixpkgs.config.allowUnfree = true;
  home.packages = [ 
  pkgs.helix
+pkgs.rnix-lsp
+ pkgs.nixpkgs-fmt
  pkgs.tree
 pkgs.nodePackages_latest.neovim
  pkgs.tree-sitter
