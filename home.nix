@@ -88,7 +88,7 @@
     strace # system call monitoring
     ltrace # library call monitoring
     lsof # list open files
-
+    eza
     # system tools
     sysstat
     lm_sensors # for `sensors` command
