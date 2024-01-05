@@ -134,7 +134,12 @@ bbenoist.nix
     yzhang.markdown-all-in-one
   ];
 };
-
+programs.obs-studio = {
+enable = true;
+plugins = with pkgs.obs-studio-plugins; [
+  obs-backgroundremoval
+];
+};
   programs.bash = {
     enable = true;
     enableCompletion = true;
@@ -150,6 +155,7 @@ bbenoist.nix
       urlencode = "python3 -c 'import sys, urllib.parse as ul; print(ul.quote_plus(sys.stdin.read()))'";
       ls = " lsd -la";
     };
+
   };
 
   # This value determines the home Manager release that your
