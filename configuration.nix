@@ -69,6 +69,12 @@ hardware.opengl.extraPackages = with pkgs; [
 hardware.opengl.driSupport32Bit = true;
  # Enable the Desktop Environment.
  services.xserver.displayManager.sddm.enable = true;
+  services.xserver.displayManager.sddm.settings = {
+  Theme = {
+    Current = "Shadows-SDDM";
+    ThemeDir = "/sddmt";
+  };
+};
  services.xserver.desktopManager.plasma5.enable = true;
  #services.xserver.windowManager.dk.enable =true;
  services.dbus.packages = with pkgs; [ gnome2.GConf ];
