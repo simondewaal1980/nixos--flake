@@ -166,6 +166,7 @@ libsForQt5.yakuake
 google-chrome
  #variety
 libsForQt5.bismuth
+ libsForQt5.ksystemlog
  pkgs.nil
   distrobox
 dosfstools
