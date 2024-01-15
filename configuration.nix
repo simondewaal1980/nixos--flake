@@ -171,8 +171,8 @@ libsForQt5.bismuth
   distrobox
 dosfstools
 appimage-run 
-python311Full
-python311Packages.pip
+#python311Full
+#python311Packages.pip
 kitty
  wl-clipboard
  mako
