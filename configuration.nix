@@ -166,7 +166,7 @@ libsForQt5.yakuake
  libreoffice-fresh
 google-chrome
  #variety
-libsForQt5.bismuth
+#libsForQt5.bismuth
  libsForQt5.ksystemlog
  pkgs.nil
   distrobox
