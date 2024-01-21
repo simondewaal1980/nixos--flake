@@ -221,6 +221,7 @@ virtualisation.vmware.host.enable=true;
 programs.steam.enable =true;
 #Hyprland
   programs.hyprland.enable = true;
+  programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;
 
 #Bashrc
 programs.bash.interactiveShellInit ="neofetch" ;
