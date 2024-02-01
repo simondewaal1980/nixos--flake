@@ -89,7 +89,10 @@ hardware.opengl.driSupport32Bit = true;
     "QT_STYLE_OVERRIDE" = pkgs.lib.mkForce "adwaita-dark";
   };
  # Enable CUPS to print documents.
- # services.printing.enable = true;
+  services.printing.enable = true;
+services.avahi.enable = true;
+   services.printing.drivers = [ pkgs.epson-escpr ];
+
 
  # Enable sound.
   sound.enable = true;
@@ -144,6 +147,11 @@ teams-for-linux
    libsForQt5.polonium
    libsForQt5.sddm-kcm
    git  
+  hunspell
+  hunspellDicts.nl_NL
+   #epsonscan2
+   epson-escpr
+   xsane
 dvdbackup
 fuse
    vlc 
