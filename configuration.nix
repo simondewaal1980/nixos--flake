@@ -90,8 +90,10 @@ hardware.opengl.driSupport32Bit = true;
   };
  # Enable CUPS to print documents.
   services.printing.enable = true;
+   services.avahi.nssmdns = true; 
 services.avahi.enable = true;
-   services.printing.drivers = [ pkgs.epson-escpr ];
+   services.printing.drivers = [ pkgs.hplip ];
+
 
 
  # Enable sound.
@@ -150,7 +152,7 @@ teams-for-linux
   hunspell
   hunspellDicts.nl_NL
    #epsonscan2
-   epson-escpr
+   hplip
    xsane
 dvdbackup
 fuse
