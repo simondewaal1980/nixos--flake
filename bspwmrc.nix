@@ -4,6 +4,7 @@ home.file.".config/bspwm/bspwmrc".text = ''
 ! /usr/bin/env bash
 
 #autostart
+export SXHKD_SHELL=/usr/bin/env bash
 picom -f &
 lxpolkit &
 nitrogen --restore &
