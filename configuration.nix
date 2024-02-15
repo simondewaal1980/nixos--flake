@@ -79,7 +79,7 @@ hardware.opengl.driSupport32Bit = true;
  #services.xserver.windowManager.dk.enable =true;
  services.dbus.packages = with pkgs; [ gnome2.GConf ];
  services.xserver.desktopManager.kodi.enable = true;
- #services.xserver.windowManager.dk.enable =true;
+ services.xserver.windowManager.bspwm.enable =true;
 
  # Configure keymap in X11
   services.xserver.layout = "us";
@@ -166,7 +166,6 @@ neofetch
   gnome.gnome-software
 gnome.gnome-system-monitor
  gnome.zenity
-  sxhkd
   xorg.xhost 
   virt-manager
  glxinfo
@@ -178,23 +177,24 @@ google-chrome
  libsForQt5.ksystemlog
  pkgs.nil
   distrobox
+  xdotool
 dosfstools
 appimage-run 
 #python311Full
 #python311Packages.pip
+feh
 kitty
- wl-clipboard
- mako
  dunst
  swww
- wofi
+sxhkd
+ rofi
 openmsx
  microsoft-edge-dev
 gettext
 networkmanagerapplet
 vmware-workstation
 nodejs
-rofi
+playerctl
 github-desktop
 #Gnome extentions
 amf-headers
@@ -228,7 +228,7 @@ virtualisation.vmware.host.enable=true;
 #Steam
 programs.steam.enable =true;
 #Hyprland
-  programs.hyprland.enable = true;
+ # programs.hyprland.enable = true;
 
 #Bashrc
 programs.bash.interactiveShellInit ="neofetch" ;

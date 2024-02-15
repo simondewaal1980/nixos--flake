@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 {
-home.file."test.txt".text = '' 
+home.file.".config/test3.txt".text = '' 
 dit is een test.
 '';
 

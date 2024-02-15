@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  
+ imports = [ ./bspwmrc.nix
+./sxhkdrc.nix 
+];
   # TODO please change the username & home direcotry to your own
   home.username = "simon";
   home.homeDirectory = "/home/simon";
