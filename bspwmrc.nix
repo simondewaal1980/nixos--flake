@@ -8,7 +8,7 @@ picom -f &
 lxpolkit &
 nitrogen --restore &
 pgrep -x sxhkd > /dev/null || sxhkd &
-$HOME/.config/polybar/launch.sh
+#$HOME/.config/polybar/launch.sh
 
 #BSPWM config
 
