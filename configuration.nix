@@ -6,7 +6,6 @@
 
 
  imports = [ ./hardware-configuration.nix
-#./home.nix 
 ];
 
 
@@ -75,6 +74,8 @@ hardware.opengl.driSupport32Bit = true;
     ThemeDir = "/sddmt";
   };
 };
+services.xserver.windowManager.bspwm.enable = true;
+
  services.xserver.desktopManager.plasma5.enable = true;
  #services.xserver.windowManager.dk.enable =true;
  services.dbus.packages = with pkgs; [ gnome2.GConf ];
@@ -187,7 +188,7 @@ appimage-run
 kitty
  wl-clipboard
  mako
- dunst
+ 
  swww
  wofi
 openmsx
@@ -196,11 +197,22 @@ gettext
 networkmanagerapplet
 vmware-workstation
 nodejs
-rofi
 github-desktop
-#Gnome extentions
+
+#BSPWM
+slock
+pulseaudioFull
+rofi
+dunst
+xdo
+rxvt-unicode
+dmenu
+feh
+polybarFull
+#diversen
 amf-headers
 libheif
+
 ];
 
 #fonts
