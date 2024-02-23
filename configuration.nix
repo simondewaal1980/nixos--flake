@@ -67,13 +67,13 @@ hardware.opengl.extraPackages = with pkgs; [
 ];
 hardware.opengl.driSupport32Bit = true;
  # Enable the Desktop Environment.
- services.xserver.displayManager.sddm.enable = true;
-  services.xserver.displayManager.sddm.settings = {
-  Theme = {
-    Current = "Shadows-SDDM";
-    ThemeDir = "/sddmt";
-  };
-};
+ services.xserver.displayManager.lightdm.enable = true;
+  #services.xserver.displayManager.sddm.settings = {
+  #Theme = {
+    #Current = "Shadows-SDDM";
+    #ThemeDir = "/sddmt";
+  #};
+#};
 services.xserver.windowManager.bspwm.enable = true;
 
  services.xserver.desktopManager.plasma5.enable = true;
