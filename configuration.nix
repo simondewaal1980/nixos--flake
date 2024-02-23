@@ -6,7 +6,6 @@
 
 
  imports = [ ./hardware-configuration.nix
-#./home.nix 
 ];
 
 
@@ -68,18 +67,19 @@ hardware.opengl.extraPackages = with pkgs; [
 ];
 hardware.opengl.driSupport32Bit = true;
  # Enable the Desktop Environment.
- services.xserver.displayManager.sddm.enable = true;
-  services.xserver.displayManager.sddm.settings = {
-  Theme = {
-    Current = "Shadows-SDDM";
-    ThemeDir = "/sddmt";
-  };
-};
+ services.xserver.displayManager.lightdm.enable = true;
+  #services.xserver.displayManager.sddm.settings = {
+  #Theme = {
+    #Current = "Shadows-SDDM";
+    #ThemeDir = "/sddmt";
+  #};
+#};
+ 
+ services.xserver.windowManager.bspwm.enable = true;
  services.xserver.desktopManager.plasma5.enable = true;
- #services.xserver.windowManager.dk.enable =true;
  services.dbus.packages = with pkgs; [ gnome2.GConf ];
  services.xserver.desktopManager.kodi.enable = true;
- #services.xserver.windowManager.dk.enable =true;
+
 
  # Configure keymap in X11
   services.xserver.layout = "us";
@@ -187,7 +187,7 @@ appimage-run
 kitty
  wl-clipboard
  mako
- dunst
+ 
  swww
  wofi
 openmsx
@@ -196,11 +196,23 @@ gettext
 networkmanagerapplet
 vmware-workstation
 nodejs
-rofi
 github-desktop
-#Gnome extentions
+
+#BSPWM
+slock
+pulseaudioFull
+rofi
+dunst
+xdo
+rxvt-unicode
+dmenu
+feh
+polybarFull
+picom
+#diversen
 amf-headers
 libheif
+
 ];
 
 #fonts
