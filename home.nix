@@ -13,7 +13,12 @@
      source = ./bspwm/bspwmrc;
      recursive = false;   # link recursively
      executable = true;  # make all files executable
-   };
+  };
+
+home.file."wallpapers" = {
+source = ./wallpapers;
+};
+
  home.file.".config/sxhkd" = {
      source = ./sxhkd;
      recursive = true;   # link recursively

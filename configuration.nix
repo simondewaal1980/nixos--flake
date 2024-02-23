@@ -74,13 +74,12 @@ hardware.opengl.driSupport32Bit = true;
     #ThemeDir = "/sddmt";
   #};
 #};
-services.xserver.windowManager.bspwm.enable = true;
-
+ 
+ services.xserver.windowManager.bspwm.enable = true;
  services.xserver.desktopManager.plasma5.enable = true;
- #services.xserver.windowManager.dk.enable =true;
  services.dbus.packages = with pkgs; [ gnome2.GConf ];
  services.xserver.desktopManager.kodi.enable = true;
- #services.xserver.windowManager.dk.enable =true;
+
 
  # Configure keymap in X11
   services.xserver.layout = "us";
@@ -209,6 +208,7 @@ rxvt-unicode
 dmenu
 feh
 polybarFull
+picom
 #diversen
 amf-headers
 libheif
