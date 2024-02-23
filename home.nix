@@ -9,9 +9,9 @@
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
 
   # link all files in `./scripts` to `~/.config/i3/scripts`
-   home.file.".config/bspwm" = {
-     source = ./bspwm;
-     recursive = true;   # link recursively
+   home.file.".config/bspwm/bspwmrc" = {
+     source = ./bspwm/bspwmrc;
+     recursive = false;   # link recursively
      executable = true;  # make all files executable
    };
  home.file.".config/sxhkd" = {
