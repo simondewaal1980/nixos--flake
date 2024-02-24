@@ -23,7 +23,11 @@ source = ./wallpapers;
      source = ./sxhkd;
      recursive = true;   # link recursively
  };
-  # encode the file content in nix configuration file directly
+  
+   home.file.".config/kitty/kitty,conf" = {
+source = ./kitty/kitty.conf;
+};
+#encode the file content in nix configuration file directly
   # home.file.".xxx".text = ''
   #     xxx
   # '';
