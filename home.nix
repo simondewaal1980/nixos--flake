@@ -24,9 +24,13 @@ source = ./wallpapers;
      recursive = true;   # link recursively
  };
   
-   home.file.".config/kitty/kitty,conf" = {
+   home.file.".config/kitty/kitty.conf" = {
 source = ./kitty/kitty.conf;
 };
+ home.file.".config/polybar/config.ini" = {
+source = ./polybar/config.ini;
+};
+
 #encode the file content in nix configuration file directly
   # home.file.".xxx".text = ''
   #     xxx
