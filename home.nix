@@ -111,7 +111,7 @@ source = ./polybar/config.ini;
     ethtool
     pciutils # lspci
     usbutils # lsusb
-
+ncspot
   ];
 
   # starship - an customizable prompt for any shell
