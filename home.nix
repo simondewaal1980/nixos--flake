@@ -176,7 +176,7 @@ enable = true;
 
   };
 #Theming
-tk = {
+gtk = {
     enable = true;
     theme = {
       name = "orchis-theme";
