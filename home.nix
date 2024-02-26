@@ -175,6 +175,22 @@ enable = true;
     };
 
   };
+#Theming
+tk = {
+    enable = true;
+    theme = {
+      name = "orchis-theme";
+      package = pkgs.orchis-theme;
+    };
+    iconTheme = {
+      name = "Adwaita";
+      package = pkgs.gnome.adwaita-icon-theme;
+    };
+    cursorTheme = {
+      name = "Adwaita";
+      package = pkgs.gnome.adwaita-icon-theme;
+    };
+  };
 
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage
