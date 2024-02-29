@@ -76,7 +76,7 @@ hardware.opengl.driSupport32Bit = true;
 #};
  
  services.xserver.windowManager.bspwm.enable = true;
- services.xserver.desktopManager.plasma5.enable = true;
+ services.xserver.desktopManager.plasma6.enable = true;
  services.dbus.packages = with pkgs; [ gnome2.GConf ];
  services.xserver.desktopManager.kodi.enable = true;
 
