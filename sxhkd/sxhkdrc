@@ -122,7 +122,7 @@ super + {Left,Down,Up,Right}
 
 	#Scratchpad
 	alt + super +  Return
-	  ~/scripts/scratchpad.sh kitty Dropdown
+	/home/simon/scripts/scratchpad.sh kitty Dropdown
 
 
 
