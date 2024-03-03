@@ -14,7 +14,11 @@
      recursive = false;   # link recursively
      executable = true;  # make all files executable
   };
-
+home.file."/scripts" = {
+     source = /scripts;
+     recursive = true;   # link recursively
+     executable = true;  # make all files executable
+  };
 home.file."wallpapers" = {
 source = ./wallpapers;
 };
