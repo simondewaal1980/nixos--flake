@@ -204,6 +204,7 @@ pulseaudioFull
 rofi
 dunst
 xdo
+xdotool
 rxvt-unicode
 dmenu
 feh
