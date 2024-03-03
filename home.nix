@@ -15,7 +15,7 @@
      executable = true;  # make all files executable
   };
 home.file."scripts" = {
-     source = /scripts;
+     source = ./scripts;
      recursive = true;   # link recursively
      executable = true;  # make all files executable
   };
