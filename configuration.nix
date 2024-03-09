@@ -147,8 +147,10 @@ teams-for-linux
    wget
    handbrake
    libsForQt5.polonium
-   libsForQt5.sddm-kcm
+   #libsForQt5.sddm-kcm
+  kdePackages.sddm-kcm
    git  
+  kdePackages.yakuake
   hunspell
   hunspellDicts.nl_NL
    #epsonscan2
@@ -172,12 +174,13 @@ gnome.gnome-system-monitor
   xorg.xhost 
   virt-manager
  glxinfo
-libsForQt5.yakuake
+#libsForQt5.yakuake
  libreoffice-fresh
 google-chrome
  #variety
 #libsForQt5.bismuth
  libsForQt5.ksystemlog
+  kdePackages.konsole
  pkgs.nil
   distrobox
 dosfstools
