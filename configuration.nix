@@ -145,7 +145,7 @@ adwaita-qt
 teams-for-linux
   vim_configurable # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
    wget
-   handbrake
+   #handbrake
    libsForQt5.polonium
    #libsForQt5.sddm-kcm
   kdePackages.sddm-kcm
@@ -165,7 +165,7 @@ spotify
 kdenlive
  #onlyoffice-bin
  krita
- rnix-lsp
+ #rnix-lsp
 neofetch
   gnome.gnome-software
 gnome.gnome-system-monitor
